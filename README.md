@@ -8,28 +8,28 @@
 
 ```
 Hardware:
-操作系统： Microsoft Windows 10 家庭单语言版 (BUILD:17763) (64 位) 
-CPU信息： Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz 
-步进：B 型号：E 系列：6 扩展型号：9E 扩展系列：6 
-主板信息： Gigabyte (技嘉) B360M D3H-CF 
-内存信息： 16.0 GB (8.0 GB / 8.0 GB / ) 
-显卡信息： NVIDIA GeForce GTX 1050 Ti
- 
-硬盘信息： INTEL SSDPEKKW256G8 (256.0 GB)
-WDC WD30EZRZ-22Z5HB0 (3.0 TB)
- 
-网卡信息： Intel(R) Ethernet Connection (7) I219-V (以太网 2)
-WAN Miniport (IP)
-WAN Miniport (IPv6)
-WAN Miniport (Network Monitor)
- 
-声卡信息： Realtek High Definition Audio
-NVIDIA High Definition Audio
- 
-显示设备： 戴尔 Dell LU2417H [DEL40E7] 24英寸
- 
-
- 集成开发环境： Visual Studio Professional  2017
+      操作系统： Microsoft Windows 10 家庭单语言版 (BUILD:17763) (64 位) 
+      CPU信息： Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz 
+      步进：B 型号：E 系列：6 扩展型号：9E 扩展系列：6 
+      主板信息： Gigabyte (技嘉) B360M D3H-CF 
+      内存信息： 16.0 GB (8.0 GB / 8.0 GB / ) 
+      显卡信息： NVIDIA GeForce GTX 1050 Ti
+       
+      硬盘信息： INTEL SSDPEKKW256G8 (256.0 GB)
+      WDC WD30EZRZ-22Z5HB0 (3.0 TB)
+       
+      网卡信息： Intel(R) Ethernet Connection (7) I219-V (以太网 2)
+      WAN Miniport (IP)
+      WAN Miniport (IPv6)
+      WAN Miniport (Network Monitor)
+       
+      声卡信息： Realtek High Definition Audio
+      NVIDIA High Definition Audio
+       
+      显示设备： 戴尔 Dell LU2417H [DEL40E7] 24英寸
+       
+      
+      集成开发环境： Visual Studio Professional  2017
 ```
 
 ---
