@@ -1,25 +1,21 @@
-#include<iostream>
-using namespace std;//c++µÄÃüÃû¿Õ¼ä
+#include <iostream>
+using namespace std; //c++ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½
 class circle
 {
-public:
-
+  public:
 	double r;
 
 	double pi = 3.1415926;
-	double area = pi * r*r;
-
+	double area = pi * r * r;
 };
 int main()
 {
 	circle pi;
-	cout << "ÇëÊäÈëarea" << endl;
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½area" << endl;
 	cin >> pi.r;
 
-	cout << pi.area << endl;	//ÂÒÂë
+	cout << pi.area << endl; //ï¿½ï¿½ï¿½ï¿½
 
 	system("pause");
 	return 0;
-
-
 }
