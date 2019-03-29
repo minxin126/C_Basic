@@ -1,6 +1,6 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-#include<iomanip>
+#include <iomanip>
 using std::setw;
 int main()
 {
@@ -8,7 +8,7 @@ int main()
 	//初始化数组元素
 	for (int i = 0; i < 10; i++)
 	{
-		data[i] = i + 100;//设置元素i为i+100
+		data[i] = i + 100; //设置元素i为i+100
 	}
 	cout << "Element" << setw(13) << "Value" << endl;
 	//输出数组中每个元素的值

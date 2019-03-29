@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -10,16 +10,16 @@ int main()
 		string fang;
 		string bian;
 		string guo;
-	}namerecord;
+	} namerecord;
 	namerecord namedouble;
-	namedouble = { 0 };
+	namedouble = {0};
 	namedouble.wang = 'wang';
 	namedouble.min = 'min';
 	namedouble.xin = 'xin';
 	namedouble.fang = "fang";
 	namedouble.bian = "bian";
 	namedouble.guo = "guoguo";
-	cout << "wang=%c"<<namedouble.wang << endl;
+	cout << "wang=%c" << namedouble.wang << endl;
 	cout << "min=%c,namedouble.min" << endl;
 	cout << "xin=%c,namedouble.xin" << endl;
 	cout << "fang=%s,namedouble.fang" << endl;
