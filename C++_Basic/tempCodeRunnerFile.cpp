@@ -5,11 +5,11 @@ version:v1.0
 time:2010-3-29
 *********************************************************/
 #include <iostream>
-using namespace std; //c++µÄÃüÃû¿Õ¼ä
-class circle		 //ÎªÒ»¸öÀà£¬Ò²ÎªÒ»¸ö½á¹¹Ìå
+using namespace std; //c++çš„å‘½åç©ºé—´
+class circle		 //ä¸ºä¸€ä¸ªç±»ï¼Œä¹Ÿä¸ºä¸€ä¸ªç»“æ„ä½“
 {
   public:
-	double r; //´ËÊ±ÎªÒ»¸öËæ»úÊı£¬Ò²ÊÇÒ»¸öÂÒÂëÊıÖµ
+	double r; //æ­¤æ—¶ä¸ºä¸€ä¸ªéšæœºæ•°ï¼Œä¹Ÿæ˜¯ä¸€ä¸ªä¹±ç æ•°å€¼
 	double pi = 3.1415926;
 	double area = pi * r * r;
 	double getS()
@@ -20,9 +20,9 @@ class circle		 //ÎªÒ»¸öÀà£¬Ò²ÎªÒ»¸ö½á¹¹Ìå
 int main()
 {
 	circle pi;
-	cout << "ÇëÊäÈë°ë¾¶r:" << endl;
-	cin >> pi.r; //ÊäÈë°ë¾¶
-	pi.getS();   //ÊäÈë°ë¾¶ºó£¬ÖØĞÂ¼ÆËãµÃÕıÈ·½á¹û¡£
+	cout << "è¯·è¾“å…¥åŠå¾„r:" << endl;
+	cin >> pi.r; //è¾“å…¥åŠå¾„
+	pi.getS();   //è¾“å…¥åŠå¾„åï¼Œé‡æ–°è®¡ç®—å¾—æ­£ç¡®ç»“æœã€‚
 	cout << pi.area << endl;
 	system("pause");
 	return 0;
