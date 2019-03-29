@@ -1,6 +1,6 @@
-#include<iostream>
-#include<string>
-#include<limits>
+#include <iostream>
+#include <string>
+#include <limits>
 using namespace std;
 int main()
 {
@@ -15,7 +15,7 @@ int main()
 	cout << "\t最大值：" << (numeric_limits<signed char>::min)() << endl;
 	cout << "unsigned char:\t" << "所占字节数：" << sizeof(unsigned char);
 	cout << "\t最大值：" << (numeric_limits<unsigned char>::max)();
-	cout << "\t\t最小值：" << (numeric_limits <unsigned char>::min)() << endl;
+	cout << "\t\t最小值：" << (numeric_limits<unsigned char>::min)() << endl;
 	cout << "wchar_t:\t" << "所占字节数：" << sizeof(wchar_t);
 	cout << "\t最大值：" << (numeric_limits<wchar_t>::max)();
 	cout << "\t\t最小值：" << (numeric_limits<wchar_t>::min)() << endl;
