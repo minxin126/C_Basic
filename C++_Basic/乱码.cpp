@@ -8,7 +8,6 @@ public:
 
 	double pi = 3.1415926;
 	double area = pi * r*r;
-
 };
 int main()
 {
@@ -20,6 +19,4 @@ int main()
 
 	system("pause");
 	return 0;
-
-
 }
