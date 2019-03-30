@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -20,5 +20,4 @@ int main()
 	c = d--;
 	cout << "Line 7-cµÄÖµÊÇ" << c << endl;
 	return 0;
-
 }

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 //º¯ÊıÉùÃ÷
 int max(int mum1, int mum2);
