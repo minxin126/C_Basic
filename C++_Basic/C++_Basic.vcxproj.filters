@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="乱码.cpp">
+    <ClCompile Include="不乱码.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

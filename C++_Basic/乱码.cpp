@@ -8,7 +8,7 @@ public:
 
 	double pi = 3.1415926;
 	double area = pi * r*r;
-};
+}s;
 int main()
 {
 	circle pi;
