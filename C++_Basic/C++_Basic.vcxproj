@@ -19,7 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="不乱码.cpp" />
+    <ClCompile Include="const关键字cpp.cpp" />
+    <ClCompile Include="三目运算符.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

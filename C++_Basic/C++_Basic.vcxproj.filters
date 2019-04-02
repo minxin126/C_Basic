@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="不乱码.cpp">
+    <ClCompile Include="三目运算符.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="const关键字cpp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -2,7 +2,7 @@
 author:minx
 function:calculate
 version:v1.0
-time:2010-3-29
+time:2019-3-29
 *********************************************************/
 #include<iostream>
 using namespace std;//c++µÄÃüÃû¿Õ¼ä
