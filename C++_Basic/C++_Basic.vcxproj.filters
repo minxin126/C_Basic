@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="结构体做函数参数.cpp">
+    <ClCompile Include="继承.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
