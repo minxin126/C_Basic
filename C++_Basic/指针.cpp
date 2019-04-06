@@ -13,6 +13,9 @@ int main()
 
 	//访问指针中地址的值
 	cout << "Value of *ip variable:";
-	cout << *ip << endl;
+	cout << *ip << endl;  //*x,相当于取x这个内存地址中的数据变量
 	return 0;
 }
+//使用指针变量前先声明其为指针变量*p
+//然后对p赋值
+//*p则是取p这个内存地址中的数据

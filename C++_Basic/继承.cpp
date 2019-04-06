@@ -36,7 +36,7 @@ public:                        //继承了对应的方法
 	}
 };
 
-int main(void)
+int main1(void)
 {
 	Rectangle Rect;          
 	Rect.setWidth(5);  //Rect可以使用父类的方法
