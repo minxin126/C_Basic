@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="二级指针.cpp">
+    <ClCompile Include="类的封装.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="立方体类.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
