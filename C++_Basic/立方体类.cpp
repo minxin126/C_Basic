@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
-int flag = 0;//ÅĞ¶Ï±êÖ¾Î»
-//Ä¿±ê£ºÉè¼ÆÁ¢·½Ìå,Çó³öÁ¢·½ÌåµÄÃæ»ıºÍÌå»ı
+int flag = 0;//åˆ¤æ–­æ ‡å¿—ä½
+//ç›®æ ‡ï¼šè®¾è®¡ç«‹æ–¹ä½“,æ±‚å‡ºç«‹æ–¹ä½“çš„é¢ç§¯å’Œä½“ç§¯
 class Cube
 {
 public:
@@ -60,8 +60,8 @@ struct Teacher
 	char name[32];
 	int age;
 };
-//c++¶ÔÏó¹ÜÀíÄ£ĞÍ
-//1ÏàµÈ£¬0²»ÏàµÈ
+//c++å¯¹è±¡ç®¡ç†æ¨¡å‹
+//1ç›¸ç­‰ï¼Œ0ä¸ç›¸ç­‰
 int judgeCube(Cube &c1, Cube &c2)
 {
 	int s1 = 0, s2 = 0;
@@ -90,10 +90,10 @@ void main101()
 	c1.setB(2);
 	c1.setC(3);
 
-	cout << "sÊÇ£º"<<c1.getS();
+	cout << "sæ˜¯ï¼š"<<c1.getS();
 	Cube c2;
-	c2.setABC(1, 2, 3);//Ä¬ÈÏ²ÎÊı
-	cout << "sÊÇ£º" << c2.getS();
+	c2.setABC(1, 2, 3);//é»˜è®¤å‚æ•°
+	cout << "sæ˜¯ï¼š" << c2.getS();
 
 }
 
@@ -107,10 +107,10 @@ void main()
 	judgeCube(c1,c2);
 	if (flag==1)
 	{
-		cout << "Á½¸öÔ²Ãæ»ıÏàÍ¬" << endl;
+		cout << "ä¸¤ä¸ªç«‹æ–¹ä½“é¢ç§¯ç›¸åŒ" << endl;
 	}
 	if (flag == 0)
 	{
-		cout << "Á½¸öÔ²Ãæ»ı²»ÏàÍ¬" << endl;
+		cout << "ä¸¤ä¸ªç«‹æ–¹ä½“é¢ç§¯ä¸ç›¸åŒ" << endl;
 	}
 }
