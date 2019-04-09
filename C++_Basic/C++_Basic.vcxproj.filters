@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="类的封装.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="立方体类.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="重载.cpp">
+    <ClCompile Include="函数重载和函数指针.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
