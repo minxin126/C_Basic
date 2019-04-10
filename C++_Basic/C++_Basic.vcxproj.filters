@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="函数重载和函数指针.cpp">
+    <ClCompile Include="继承重载等\重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="继承重载等\继承2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
