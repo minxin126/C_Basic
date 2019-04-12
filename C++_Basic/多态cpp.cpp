@@ -1,5 +1,5 @@
 #include <iostream> 
-using namespace std;
+using namespace std;//minx added
 
 class Shape {
 protected:
@@ -34,21 +34,21 @@ public:
 		return (width * height / 2);
 	}
 };
-// ³ÌĞòµÄÖ÷º¯Êı
+// ç¨‹åºçš„ä¸»å‡½æ•°
 int main()
 {
 	Shape *shape;
 	Rectangle rec(10, 7);
 	Triangle  tri(10, 5);
 
-	// ´æ´¢¾ØĞÎµÄµØÖ·
+	// å­˜å‚¨çŸ©å½¢çš„åœ°å€
 	shape = &rec;
-	// µ÷ÓÃ¾ØĞÎµÄÇóÃæ»ıº¯Êı area
+	// è°ƒç”¨çŸ©å½¢çš„æ±‚é¢ç§¯å‡½æ•° area
 	shape->area();
 
-	// ´æ´¢Èı½ÇĞÎµÄµØÖ·
+	// å­˜å‚¨ä¸‰è§’å½¢çš„åœ°å€
 	shape = &tri;
-	// µ÷ÓÃÈı½ÇĞÎµÄÇóÃæ»ıº¯Êı area
+	// è°ƒç”¨ä¸‰è§’å½¢çš„æ±‚é¢ç§¯å‡½æ•° area
 	shape->area();
 
 	return 0;
