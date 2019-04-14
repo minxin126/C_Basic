@@ -27,7 +27,7 @@ int getTe2(Teacher* &myp) //相当于一个二级指针
 	return 0;
 }
 
-void main1()
+void main()
 {
 	Teacher *p = NULL;
 	//getTe(&p);
