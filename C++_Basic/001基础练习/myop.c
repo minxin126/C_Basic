@@ -8,7 +8,7 @@ typedef struct Teacher
 	char studentInfo[1024];//s1,s2,s3,
 }Teacher;
 //添加老师
-int AddTeacher(char *pfileName,Teacher *pTe);
+int AddTeacher(char *pfileName,Teacher *pTe)
 {
 	//准备些配置文件的关键字 根据ID动态构建
 	    char Teacher_InfoID[128];
@@ -30,5 +30,5 @@ int AddTeacher(char *pfileName,Teacher *pTe);
 int modifyTeacher(char *pfileName, Teacher *pTe);
 void main()
 {
-	
+	//main函数在最下面
 }
