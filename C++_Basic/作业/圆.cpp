@@ -21,7 +21,6 @@ public:
 		distance = sqrt(p_x*p_x + p_y * p_y);//错误，后期更改
 		return distance;
 	}
-
 };
 class  Circle
 {
@@ -34,11 +33,9 @@ Point p2;
 
 int main()
 {
-	cout << "输入横坐标：" <<endl;
+	cout << "输入横坐标：" << endl;
 	p1.getX();
-	cout << "输入纵坐标："<<endl;
+	cout << "输入纵坐标：" << endl;
 	p1.getY();
 	cout << "两点的距离为：" << p1.Calculate() << endl;
-
-
 }
