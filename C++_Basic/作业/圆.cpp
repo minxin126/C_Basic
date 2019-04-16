@@ -1,46 +1,70 @@
+/*************************************
+author:min
+time:2019-4-16
+**************************************/
 #include<iostream>
 using namespace std;
+//点类
 class Point
 {
 public:
-	int p_x;//点的横坐标
-	int p_y;//点的纵坐标
-
-	int getX(int p_x)
+	void setCenter(int x, int y)
 	{
-		cin >> p_x;
-		return  p_x;
+		m_x = x;
+		m_y = y;
 	}
-	int getY(int p_y)
-	{
-		cin >> p_y;
-		return p_y;
-	}
+	//计算和另外一个点之欧几里得距离的方法
+	double getDistance(Point &another)  //函数参数只是给函数内部使用，使用对象.x时候一般在对象前面取&
+	{//Point表示应该是放入一个点，然后&Point
+		int d_x = m_x - another.m_x;
+		int d_y = m_y - another.m_y;
+		double distance = sqrt(d_x*d_x + d_y * d_y);
 
+		return distance;
+	}
+private:
+	int m_x;
+	int m_y;
 };
-Point p1;
-Point p2;
-int Calculate()//计算两点的距离
-{
-	float distance;
-	distance = sqrt((p1.getX(p_x) - p2.getX(p_x)) ^ 2 + (p2.getY(p_y) - p2.getY(p_y) ^ 2);//
-	return distance;
-	//完全独立写，还是很不熟练。得更加独立写。明天继续
-}
 class  Circle
 {
 public:
-	int c_x;//圆心
+	Point p3;//圆心坐标
 	int c_r;//半径
+	int setCircleCenter()
+	{
+	}
+	int  setR(int r)
+	{
+		c_r = r;
+		return c_r;
+	}
+	int CircleRelationship(Circle &another)
+	{
+	}
+	//明天继续
 };
-Point p1;
-Point p2;
 
 int main()
 {
-	cout << "输入横坐标：" << endl;
-	p1.getX();
-	cout << "输入纵坐标：" << endl;
-	p1.getY();
-	cout << "两点的距离为：" << Calculate() << endl;
+	Point p1;
+	Point p2;
+	//通过设置固定点的值，或者手动输入点的数值
+	int x = 0, y = 0;
+
+	cout << "输入第一个点的坐标：" << endl;
+	cin >> x >> y;
+	p1.setCenter(x, y);//分别返回p1的m_x和m_y
+
+	cout << "输入第二个点的坐标：" << endl;
+	cin >> x >> y;
+	p2.setCenter(x, y);//分别返回p2m_x和m_y
+
+	p1.getDistance(p2);//返回计算的距离的结果
+
+	cout << "两点的距离为：" << p1.getDistance(p2) << endl;;
 }
+//过程：我看了一晚上也不知道	double getDistance(Point &another)怎么调用传递参数
+//我一直尝试	p1.getDistance(Point &p2);始终报错，最后是抄网上的程序，发现（Point &another)直接
+//	p1.getDistance(p2);就可以调用，对于这种带指针参数的函数，我根本不知道如何调用。我还是需要自己多独立搞，独立
+//循序渐进搞。还是多做搜索。总之独立，按自己的节奏循序渐进。跨度大容易卡久。
