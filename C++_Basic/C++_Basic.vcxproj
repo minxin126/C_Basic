@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo01_考试题.c" />
+    <ClCompile Include="作业\圆.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\学习资料\04-C++语言-王保明\day11\结构体配置文件读写\结构体配置文件读写\结构体配置文件读写\cfg_op.h" />

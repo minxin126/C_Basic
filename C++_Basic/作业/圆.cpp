@@ -30,7 +30,11 @@ class  Circle
 {
 public:
 	Point p3;//圆心坐标
+	Point p4;//圆心坐标
+	//有点的属性和方法
+
 	int c_r;//半径
+	//通过引入点的属性
 	int setCircleCenter()
 	{
 	}
@@ -39,8 +43,11 @@ public:
 		c_r = r;
 		return c_r;
 	}
-	int CircleRelationship(Circle &another)
+	int getDoubleR(Circle &another)
 	{
+		int sumR;
+		sumR = c_r + another.c_r;
+		return sumR;
 	}
 	//明天继续
 };
@@ -49,6 +56,7 @@ int main()
 {
 	Point p1;
 	Point p2;
+	Point p4;
 	//通过设置固定点的值，或者手动输入点的数值
 	int x = 0, y = 0;
 
@@ -63,6 +71,29 @@ int main()
 	p1.getDistance(p2);//返回计算的距离的结果
 
 	cout << "两点的距离为：" << p1.getDistance(p2) << endl;;
+	Circle c1;
+	Circle c2;
+
+	int r1 = 0;
+	int r2 = 0;
+	cout << "输入第一个圆的半径:" << endl;
+	cin >> r1;
+	c1.setR(r1);
+
+	cout << "输入第二个圆的半径:" << endl;
+	cin >> r2;
+	c1.setR(r2);
+
+	int c_distance = 0;
+	c_distance = c1.p3.getDistance(p4);
+	if (c_distance > c1.getDoubleR(c2))
+	{
+		cout << "两个圆相离" << endl;
+	}
+	else if (c_distance < c1.getDoubleR(c2))
+	{
+		cout << "两个圆相交" << endl;
+	}
 }
 //过程：我看了一晚上也不知道	double getDistance(Point &another)怎么调用传递参数
 //我一直尝试	p1.getDistance(Point &p2);始终报错，最后是抄网上的程序，发现（Point &another)直接
