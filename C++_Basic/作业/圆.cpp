@@ -22,28 +22,45 @@ public:
 
 		return distance;
 	}
-private:
-	int m_x;
+public:
+	int m_x; //更改为public后，可以被其他类调用。private不可被其他类调用。
 	int m_y;
 };
 class  Circle
 {
 public:
-	Point p3;//圆心坐标
-	Point p4;//圆心坐标
+	Point p1;//圆心坐标
+	Point p2;//圆心坐标
 	//有点的属性和方法
 
 	int c_r;//半径
 	//通过引入点的属性
-	int setCircleCenter()
-	{
-	}
 	int  setR(int r)
 	{
 		c_r = r;
 		return c_r;
 	}
-	int getDoubleR(Circle &another)
+	void setCenter(int x, int y)
+	{
+		p0.setCenter(x, y);
+	}
+	bool isIntersection(Circle &another)
+	{
+		int r = m_r + another.m_r;
+		double distance = p0.getDistance(another.p0);
+		if (distance <= rr)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	private:
+		int m_r;
+		Point p0;
+	}
+	int getSumR(Circle &another)
 	{
 		int sumR;
 		sumR = c_r + another.c_r;
@@ -54,9 +71,10 @@ public:
 
 int main()
 {
+	//求一个点和另外一个点的距离
 	Point p1;
 	Point p2;
-	Point p4;
+
 	//通过设置固定点的值，或者手动输入点的数值
 	int x = 0, y = 0;
 
@@ -66,11 +84,13 @@ int main()
 
 	cout << "输入第二个点的坐标：" << endl;
 	cin >> x >> y;
-	p2.setCenter(x, y);//分别返回p2m_x和m_y
+	p2.setCenter(x, y);//分别返回p2的m_x和m_y
 
 	p1.getDistance(p2);//返回计算的距离的结果
 
 	cout << "两点的距离为：" << p1.getDistance(p2) << endl;;
+
+	//求两个圆是否会相交
 	Circle c1;
 	Circle c2;
 
@@ -82,17 +102,21 @@ int main()
 
 	cout << "输入第二个圆的半径:" << endl;
 	cin >> r2;
-	c1.setR(r2);
+	c2.setR(r2);
 
-	int c_distance = 0;
-	c_distance = c1.p3.getDistance(p4);
-	if (c_distance > c1.getDoubleR(c2))
+	float c_distance = 0;
+	c_distance = c1.p1.getDistance(p2);
+	if (c_distance > c1.getSumR(c2))
 	{
 		cout << "两个圆相离" << endl;
 	}
-	else if (c_distance < c1.getDoubleR(c2))
+	else if (c_distance < c1.getSumR(c2))
 	{
 		cout << "两个圆相交" << endl;
+	}
+	else if (c_distance == c1.getSumR(c2))
+	{
+		cout << "两个圆相切" << endl;
 	}
 }
 //过程：我看了一晚上也不知道	double getDistance(Point &another)怎么调用传递参数
