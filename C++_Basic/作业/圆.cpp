@@ -1,7 +1,13 @@
-/*************************************
-author:min
-time:2019-4-16
-**************************************/
+/*****************************************************************************
+Author:min
+Time:2019-4-16
+Description:
+1、	圆形
+编写C++程序完成以下功能：
+（1）	定义一个Point类，其属性包括点的坐标，提供计算两点之间距离的方法；
+（2）	定义一个圆形类，其属性包括圆心和半径；
+（3）	创建两个圆形对象，提示用户输入圆心坐标和半径，判断两个圆是否相交，并输出结果。
+*****************************************************************************/
 #include<iostream>
 using namespace std;
 //点类
@@ -10,8 +16,8 @@ class Point
 public:
 	void setCenter(int x, int y)
 	{
-		m_x = x;
-		m_y = y;
+		m_x = x;//横坐标
+		m_y = y;//纵坐标
 	}
 	//计算和另外一个点之欧几里得距离的方法
 	double getDistance(Point &another)  //函数参数只是给函数内部使用，使用对象.x时候一般在对象前面取&
@@ -22,7 +28,7 @@ public:
 
 		return distance;
 	}
-public:
+private:
 	int m_x; //更改为public后，可以被其他类调用。private不可被其他类调用。
 	int m_y;
 };
@@ -58,12 +64,6 @@ public:
 		{
 			return false;
 		}
-		//int getSumR(Circle &another)
-		//{
-		//	//int sumR;
-		//	//sumR = c_r + another.c_r;
-		//	return sumR;
-		//}
 	}
 private:
 	int c_r;

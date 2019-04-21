@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="006对象构造和析构专题\demo03拷贝构造函数的四种应用场景01.cpp">
+    <ClCompile Include="作业\圆.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
