@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int HeartBeat=0;
+int HeartBeat = 0;
 int *p;
 void  Calculate()
 {
