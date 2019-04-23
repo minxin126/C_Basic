@@ -20,7 +20,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Day15\demo5_析构函数虚函数应用场景.cpp">
+    <ClCompile Include="Day16\动态库函数调用.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Day16\demo1_函数指针语法基础.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Day16\demo2_函数指针做函数参数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Day16\动态库函数调用Dlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

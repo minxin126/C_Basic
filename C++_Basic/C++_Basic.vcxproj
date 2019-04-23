@@ -22,7 +22,10 @@
     <ClInclude Include="..\..\..\学习资料\04-C++语言-王保明\day11\结构体配置文件读写\结构体配置文件读写\结构体配置文件读写\cfg_op.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Day15\demo5_析构函数虚函数应用场景.cpp" />
+    <ClCompile Include="Day16\demo1_函数指针语法基础.cpp" />
+    <ClCompile Include="Day16\demo2_函数指针做函数参数.cpp" />
+    <ClCompile Include="Day16\动态库函数调用.cpp" />
+    <ClCompile Include="Day16\动态库函数调用Dlg.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
