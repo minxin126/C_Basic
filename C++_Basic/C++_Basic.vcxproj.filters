@@ -18,12 +18,15 @@
     <ClInclude Include="..\..\..\学习资料\04-C++语言-王保明\day11\结构体配置文件读写\结构体配置文件读写\结构体配置文件读写\cfg_op.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\学习资料\04-C++语言-王保明\day19\线性表的链式存储\线性表的链式存储\线性表的链式存储\linklist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="day18\demo5_teacher类模板基础.cpp">
+    <ClCompile Include="Day19\linklist.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="day18\demo06_l类模板遇上函数重载.cpp">
+    <ClCompile Include="Day19\线性表的一道作业题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
