@@ -29,5 +29,8 @@
     <ClCompile Include="Day19\线性表的一道作业题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Day20\demo_线性表链式存储.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
