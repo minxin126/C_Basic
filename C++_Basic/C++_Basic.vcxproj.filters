@@ -26,7 +26,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\学习资料\04-C++语言-王保明\day20\linkstack设计与实现\linkstack设计与实现\linkstack设计与实现\linkstack.c">
+    <ClCompile Include="Day22\二叉链表.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
