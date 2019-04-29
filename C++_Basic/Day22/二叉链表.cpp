@@ -15,11 +15,11 @@ TreeNode* BinaryTree(char *preorder, char *inorder, int len)//二叉树，先序，中序
 	if (len <= 0)
 		return NULL;
 	TreeNode *root = (TreeNode*)malloc(sizeof(TreeNode));//分配内存
-	root->elem = preorder[0];//根为先序的第一个点root.elem(因为root为指针所以->)
+	root->elem = preorder[0];//根为先序的第一个点root.elem(因为root为指针所以->)可能每次取第一个
 	int rootindex = -1;//初值
 	for (int i = 0; i < len; i++)//
 	{
-		if (inorder[i] == preorder[0])//中序中的某个节点等于先序第一个，则这个是真的根节点
+		if (inorder[i] == preorder[0])//中序中的某个节点等于先序第一个，则这个是真的根节点，寻找每一次的根节点。
 		{
 			rootindex = i;
 			break;
@@ -32,13 +32,13 @@ TreeNode* BinaryTree(char *preorder, char *inorder, int len)//二叉树，先序，中序
 	return root;//返回根
 }
 
-void Traversal(TreeNode *root)
+void Traversal(TreeNode *root)//声明root为指针变量
 {
 	if (root != NULL)
 	{
 		Traversal(root->lchild);
 		Traversal(root->rchild);
-		cout << root->elem << endl;//显示树的过程
+		cout << root->elem << endl;//显示树根的过程
 	}
 }
 int main()
@@ -56,3 +56,10 @@ int main()
 
 	return 0;
 }
+//输入样例
+//ABCDEGF
+//CBEGDFA
+//输出后续样例
+//CGEFDBA
+//cbegdfa
+//cgefdba
