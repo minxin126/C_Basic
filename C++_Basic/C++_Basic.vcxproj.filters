@@ -32,5 +32,8 @@
     <ClCompile Include="Day23\快速排序.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Day24视频结束\插入.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

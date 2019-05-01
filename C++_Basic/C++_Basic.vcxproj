@@ -26,6 +26,7 @@
   <ItemGroup>
     <ClCompile Include="Day22\二叉链表.cpp" />
     <ClCompile Include="Day23\快速排序.c" />
+    <ClCompile Include="Day24视频结束\插入.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
