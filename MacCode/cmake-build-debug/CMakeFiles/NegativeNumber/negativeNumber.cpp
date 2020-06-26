@@ -22,7 +22,7 @@ double sum(int n) {
         return numin[n] + sum(n - 1);
 }
 
-int main() {
+int mainneg() {
     int i = 0;
     int l = 0;
     int m = 0;

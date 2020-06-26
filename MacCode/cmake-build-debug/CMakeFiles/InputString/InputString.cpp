@@ -32,7 +32,6 @@ int inputString() {
 }
 
 void substr() {
-    //string string1 = "I am a student";
     string string1;
     getline(cin, string1);
     int len = string1.length();
@@ -43,16 +42,9 @@ void substr() {
     for (auto y:strout) {
         cout << y;
     }
-//    for (int j = 0; j < len; ++j) {
-//        cout << strout[j];
-//    }
-
 }
 
-
-int main() {
-
-
+int maina() {
     substr();
     return 0;
 }
